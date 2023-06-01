@@ -1,47 +1,37 @@
-import Image from "next/image";
+import About from "./components/About";
+import Email from "./components/Email";
+import Hero from "./components/Hero";
+import Info from "./components/Info";
+import Learning from "./components/Learning";
+import ProfilePic from "./components/ProfilePic";
+import Projects from "./components/portfolio/Projects";
+import Socials from "./components/socials/Socials";
+import Stats from "./components/stats/Stats";
 
 export default () => {
   return (
-    <main className="max-w-screen-xl mx-auto text-white">
-      <div className="flex flex-col h-screen p-10">
-        <div className="flex flex-row h-3/5 mb-4">
-          <div className="flex-grow flex flex-col mr-4 space-y-4">
-            <div className="h-3/5 bg-zinc-900 rounded-3xl p-6 "></div>
-            <div className="h-2/5 flex justify-between space-x-4">
-              <div className="w-1/3 bg-emerald-400 rounded-3xl"></div>
-              <div className="w-1/3 bg-yellow-400 rounded-3xl"></div>
-              <div className="w-1/3 bg-rose-400 rounded-3xl"></div>
-            </div>
+    <main className="max-w-screen-xl mx-auto ">
+      <div className="flex flex-col h-screen p-10 ">
+        <div className="flex flex-col lg:flex-row h-3/5 mb-4">
+          <div className="flex-grow flex flex-col lg:mr-4 mr-0 space-y-4">
+            <Hero />
+            <Stats />
           </div>
-          <div className="flex-grow flex flex-col">
-            <div className="h-16 bg-zinc-900 rounded-3xl mb-4 px-4"></div>
-            <div className="flex-grow flex justify-between">
-              <div className="w-1/2 bg-zinc-900 rounded-3xl mr-4"></div>
-              <div className="w-1/2 flex flex-col">
-                <div className="h-20 bg-zinc-900 rounded-3xl mb-2  px-4"></div>
-                <div className="flex-grow bg-zinc-900 rounded-3xl my-2"></div>
-
-                <div className="h-20 bg-zinc-900 rounded-3xl mt-2 flex justify-between p-1">
-                  <div className="w-1/4 bg-zinc-800 rounded-3xl m-1"></div>
-                  <div className="w-1/4 bg-zinc-800 rounded-3xl m-1"></div>
-                  <div className="w-1/4 bg-zinc-800 rounded-3xl m-1"></div>
-                  <div className="w-1/4 bg-zinc-800 rounded-3xl m-1"></div>
-                </div>
+          <div className="flex-grow flex flex-col lg:mt-0 mt-4">
+            <Info />
+            <div className="flex flex-col sm:flex-row justify-between flex-grow">
+              <ProfilePic />
+              <div className="w-full sm:w-1/2 flex flex-col">
+                <Email />
+                <Learning />
+                <Socials />
               </div>
             </div>
           </div>
         </div>
-
-        <div className="flex justify-between h-2/5">
-          <div className="w-7/12 bg-zinc-900 rounded-3xl mr-2 p-5">
-            <h2 className="text-2xl mb-5 font-bold">Recent Projects</h2>
-            <div className="w-full h-full flex justify-between gap-6">
-              <div className="w-52 h-52  bg-zinc-800 rounded-3xl"></div>
-              <div className="w-52 h-52 bg-zinc-800 rounded-3xl"></div>
-              <div className="w-52 h-52 bg-zinc-800 rounded-3xl"></div>
-            </div>
-          </div>
-          <div className="w-5/12 bg-zinc-900 rounded-3xl ml-2 p-6"></div>
+        <div className="flex justify-between flex-col md:flex-row h-2/5">
+          <Projects />
+          <About />
         </div>
       </div>
     </main>
