@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Rubik } from "next/font/google";
+import { Quicksand } from "next/font/google";
 
-const rubik = Rubik({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -15,9 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${rubik.className} bg-white text-black dark:bg-black dark:text-white`}
-      >
+      <body className={`${quicksand.className} bg-white text-white dark:bg-black`}>
         {children}
       </body>
     </html>

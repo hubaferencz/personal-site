@@ -1,0 +1,45 @@
+{
+  "name": "Huba Ferencz",
+  "email": "contact@hubaferencz.com",
+  "about": "I'm a Web developer with a passion for turning cool ideas into amazing web apps. I love the process of designing, developing, testing, and deploying projects that make a real difference in people's lives. Whether it's for my clients or for myself, I always strive to create web apps that are not only functional but also user-friendly and visually appealing. I believe that a good web app should be easy to use, convey a company's message effectively, and bring out their unique identity.",
+  "stats": [
+    { "name": "Years of experience", "quant": 5 },
+    { "name": "Handled Projects", "quant": 32 },
+    { "name": "Clients", "quant": 27 }
+  ],
+  "portfolio": [
+    {
+      "link": "https://demo.dister.org/",
+      "github": "https://github.com/project-dister/demo",
+      "thumbnail": "thumbnails/dister.png"
+    },
+    {
+      "link": "https://whaleportal.com/",
+      "github": "",
+      "thumbnail": "thumbnails/whaleportal.png"
+    },
+    {
+      "link": "https://walletportal.org/",
+      "github": "https://github.com/hubaferencz/walletportal",
+      "thumbnail": "thumbnails/walletportal.png"
+    }
+  ],
+  "socials": [
+    {
+      "github": "https://github.com/hubaferencz",
+      "svg": "/icons/github"
+    },
+    {
+      "linkedin": "https://www.linkedin.com/in/hubaferencz/",
+      "svg": "/icons/linkedin"
+    },
+    {
+      "github": "https://t.me/hubaferencz",
+      "svg": "/icons/telegram"
+    },
+    {
+      "github": "https://twitter.com/hubaferencz",
+      "svg": "/icons/twitter"
+    }
+  ]
+}

@@ -1,11 +1,33 @@
-import React from "react";
+"use client";
+import Image from "next/image";
 
-type Props = {};
+export default function Info() {
+  //   toast('Hello Darkness!',
+  //   {
+  //     icon: '💌',
+  //     style: {
+  //       borderRadius: '10px',
+  //       background: '#333',
+  //       color: '#fff',
+  //     },
+  //   }
+  // );
 
-export default function Info({}: Props) {
   return (
-    <div className="h-16 bg-zinc-900 rounded-3xl mb-4 px-4">
-      <h1 className="text-white">sdfds</h1>
+    <div
+      className="h-16 bg-gray rounded-3xl mb-4 px-6 flex items-center cursor-pointer"
+      onClick={() => {
+        navigator.clipboard.writeText("contact@hubaferencz.com");
+      }}
+    >
+      <h1 className="text-lime">contact@hubaferencz.com</h1>
+      <Image
+        src="/copy-icon.svg"
+        width={20}
+        height={20}
+        alt="copy"
+        className="ml-2"
+      />
     </div>
   );
 }
