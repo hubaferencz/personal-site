@@ -28,6 +28,7 @@ export default function RootLayout({
               background: "#A6FE05",
               fontWeight: "600",
               fontSize: "20px",
+              borderRadius: "24px",
             },
           }}
         />

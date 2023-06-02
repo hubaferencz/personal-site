@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="relative h-64 bg-gray  rounded-3xl  overflow-hidden">
+    <div className="relative h-64 bg-gray  rounded-3xl overflow-hidden">
       <div className="absolute p-6">
         <h1 className="relative text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wide leading-tight max-w-full max-h-full my-auto">
           I'm <span className="text-lime">Huba Ferencz</span>, a{" "}

@@ -1,15 +1,30 @@
-import React from "react";
 import SocialItem from "./SocialItem";
 
-type Props = {};
+export default function Socials() {
+  const socials = [
+    {
+      icon: "/socials/github.svg",
+      link: "https://github.com/hubaferencz",
+    },
+    {
+      icon: "/socials/linkedin.svg",
+      link: "https://www.linkedin.com/in/hubaferencz/",
+    },
+    {
+      icon: "/socials/twitter.svg",
+      link: "https://twitter.com/HubaFerencz",
+    },
+    {
+      icon: "/socials/telegram.svg",
+      link: "https://t.me/hubaferencz",
+    },
+  ];
 
-export default function Socials({}: Props) {
   return (
-    <div className="h-20 bg-zinc-900 rounded-3xl mt-2 flex justify-between p-1">
-      <SocialItem />
-      <SocialItem />
-      <SocialItem />
-      <SocialItem />
+    <div className="h-20 bg-gray rounded-3xl flex justify-between p-2">
+      {socials.map((social, index) => (
+        <SocialItem key={index} link={social.link} icon={social.icon} />
+      ))}
     </div>
   );
 }

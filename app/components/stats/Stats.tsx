@@ -1,6 +1,5 @@
 import StatCard from "./StatCard";
 
-// StatData.ts
 interface StatData {
   name: string;
   quant: number;

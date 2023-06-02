@@ -23,10 +23,10 @@ export default function Email() {
       <h2 className="text-lime">contact@hubaferencz.com</h2>
       <Image
         src="/copy-icon.svg"
-        width={20}
-        height={20}
+        width={25}
+        height={25}
         alt="copy"
-        className="ml-2"
+        className="ml-1"
       />
     </div>
   );
