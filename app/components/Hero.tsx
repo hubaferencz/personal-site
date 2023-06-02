@@ -5,8 +5,8 @@ export default function Hero() {
     <div className="relative h-64 bg-gray  rounded-3xl  overflow-hidden">
       <div className="absolute p-6">
         <h1 className="relative text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wide leading-tight max-w-full max-h-full my-auto">
-          From an <span className="text-lime">idea</span> to fully fledged{" "}
-          <span className="text-red">web app</span>
+          I'm <span className="text-lime">Huba Ferencz</span>, a{" "}
+          <span className="text-red">Front-end Engineer</span>
         </h1>
       </div>
       <Link

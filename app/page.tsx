@@ -1,9 +1,9 @@
 import About from "./components/About";
-import Email from "./components/Email";
+import Resume from "./components/Resume";
 import Hero from "./components/Hero";
-import Info from "./components/Info";
+import Info from "./components/Email";
 import Learning from "./components/Learning";
-import ProfilePic from "./components/ProfilePic"; 
+import ProfilePic from "./components/ProfilePic";
 import Projects from "./components/portfolio/Projects";
 import Socials from "./components/socials/Socials";
 import Stats from "./components/stats/Stats";
@@ -19,10 +19,10 @@ export default () => {
           </div>
           <div className="flex-grow flex flex-col lg:mt-0 mt-4">
             <Info />
-            <div className="flex flex-col sm:flex-row justify-between flex-grow">
+            <div className="flex flex-col sm:flex-row sm:h-96 justify-between flex-grow">
               <ProfilePic />
               <div className="w-full sm:w-1/2 flex flex-col">
-                <Email />
+                <Resume />
                 <Learning />
                 <Socials />
               </div>
