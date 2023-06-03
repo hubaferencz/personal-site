@@ -10,7 +10,7 @@ export const stats = [
   { name: "Clients", quant: 27 },
 ];
 
-export const resume = "";
+export const resume = "https://drive.google.com/file/d/1e1UBK8SVLFhlYvFFSeuVYWbTPBqMg6Qe/view?usp=sharing";
 
 export const socials = [
   {
