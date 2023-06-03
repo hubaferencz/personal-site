@@ -1,20 +1,13 @@
-import Link from "next/link";
+import { name, occupation } from "../data";
 
 export default function Hero() {
   return (
-    <div className="relative h-64 bg-gray  rounded-3xl overflow-hidden">
-      <div className="absolute p-6">
-        <h1 className="relative text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-wide leading-tight max-w-full max-h-full my-auto">
-          I'm <span className="text-lime">Huba Ferencz</span>, a{" "}
-          <span className="text-red">Front-end Engineer</span>
+    <header className="relative h-52 lg:h-72 md:h-56 bg-gray rounded-3xl overflow-hidden">
+      <div className="absolute p-4 xl:p-6">
+        <h1 className="relative text-3xl leading-tight sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight font-semibold tracking-wide">
+          <span className="text-lime">{name}</span> {occupation}
         </h1>
       </div>
-      <Link
-        href="https://www.linkedin.com/in/hubaferencz/"
-        className="absolute bottom-6 right-6 bg-lime p-2 sm:p-3 md:p-4 rounded-xl text-gray font-bold text-lg sm:text-xl"
-      >
-        Hire me!
-      </Link>
-    </div>
+    </header>
   );
 }

@@ -25,7 +25,7 @@ export default function Learning() {
   ];
 
   return (
-    <div className="relative h-36 sm:h-52 bg-gray rounded-3xl my-4 text-md sm:text-lg md:text-xl overflow-hidden">
+    <section className="relative h-36 sm:h-52 bg-gray rounded-3xl my-4 text-md sm:text-lg md:text-xl overflow-hidden">
       <ul className="absolute px-6 my-4 overflow-y-scroll w-full h-full pb-4">
         {learnings.map((learning, index) => (
           <li key={index} className="mb-2 break-words">
@@ -41,6 +41,6 @@ export default function Learning() {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }

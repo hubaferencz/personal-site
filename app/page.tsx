@@ -29,7 +29,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col lg:flex-row">
           <Projects />
           <About />
         </div>

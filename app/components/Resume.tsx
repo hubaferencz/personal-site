@@ -1,13 +1,18 @@
+import { resume } from "../data";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Resume() {
   return (
-    <div className="h-16 bg-gray rounded-3xl mt-4 sm:mt-0 px-6 flex items-center cursor-pointer text-md sm:text-lg md:text-xl">
+    <section className="h-16 bg-gray rounded-3xl mt-4 sm:mt-0 px-6 flex items-center cursor-pointer text-md sm:text-lg md:text-xl">
       <h2>Resume:</h2>
       <div className="flex-grow"></div>
       <h2 className="flex items-center">
-        <Link href={""} className="text-lime flex items-center hover:underline">
+        <Link
+          href={resume}
+          target="_blank"
+          className="text-lime flex items-center hover:underline"
+        >
           Check it out{" "}
           <Image
             src={"/arrow.svg"}
@@ -18,6 +23,6 @@ export default function Resume() {
           />
         </Link>
       </h2>
-    </div>
+    </section>
   );
 }

@@ -3,40 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import Project from "./Project";
 import Image from "next/image";
 
-export default function Projects() {
-  const projects = [
-    {
-      thumbnail: "/thumbnails/Dister.png",
-      name: "Dister",
-      github: "https://github.com/project-dister/demo",
-      link: "https://demo.dister.org/",
-    },
-    {
-      thumbnail: "/thumbnails/WhalePortal.png",
-      name: "Whaleportal",
-      github: "",
-      link: "https://whaleportal.com/",
-    },
-    {
-      thumbnail: "/thumbnails/walletportal.png",
-      name: "Walletportal",
-      github: "https://github.com/hubaferencz/walletportal",
-      link: "https://walletportal.org/",
-    },
-    {
-      thumbnail: "/thumbnails/LaunchChain.png",
-      name: "LaunchChain",
-      github: "https://github.com/hubaferencz/LaunchChain",
-      link: "https://launchchain.netlify.app/",
-    },
-    {
-      thumbnail: "/thumbnails/Twitter.png",
-      name: "Twitter clone",
-      github: "https://github.com/hubaferencz/twitter-clone",
-      link: "https://twitter-clone-eight-gold.vercel.app/",
-    },
-  ];
+import { projects } from "../../data";
 
+export default function Projects() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -55,7 +24,7 @@ export default function Projects() {
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     if (scrollContainer) {
-      const childWidth = 216;
+      const childWidth = 224;
       const totalWidth = currentIndex * childWidth;
 
       scrollContainer.scroll({
@@ -66,10 +35,10 @@ export default function Projects() {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full min-h-full h-58 md:w-7/12 bg-gray rounded-3xl mr-2 p-5 ">
-      <h2 className="text-md sm:text-lg md:text-xl mb-5">Recent Projects:</h2>
-      <div className="absolute top-5 right-5 flex justify-between mb-2">
-        <button onClick={scrollPrev} className="mr-1">
+    <section className="relative w-full min-h-full h-58 lg:w-7/12 bg-gray rounded-3xl mr-2 p-5 ">
+      <h2 className="text-xl md:text-2xl mb-5">Recent Projects:</h2>
+      <div className="absolute top-5 right-5 hidden sm:flex justify-between mb-2">
+        <button onClick={scrollPrev} className="">
           <Image
             src={"/left-arrow.svg"}
             width={25}
@@ -100,6 +69,6 @@ export default function Projects() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
