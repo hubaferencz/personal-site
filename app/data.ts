@@ -45,7 +45,7 @@ export const projects = [
     link: "https://whaleportal.com/",
   },
   {
-    thumbnail: "/thumbnails/Walletportal.png",
+    thumbnail: "/thumbnails/walletportal.png",
     name: "Walletportal",
     github: "https://github.com/hubaferencz/walletportal",
     link: "https://walletportal.org/",
