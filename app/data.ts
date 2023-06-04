@@ -6,8 +6,8 @@ export const email = "contact@hubaferencz.com";
 
 export const stats = [
   { name: "Years", quant: 5 },
-  { name: "Works", quant: 32 },
-  { name: "Clients", quant: 27 },
+  { name: "Works", quant: 50 },
+  { name: "Clients", quant: 40 },
 ];
 
 export const resume = "https://drive.google.com/file/d/1e1UBK8SVLFhlYvFFSeuVYWbTPBqMg6Qe/view?usp=sharing";
