@@ -10,7 +10,7 @@ export const stats = [
   { name: "Clients", quant: 40 },
 ];
 
-export const resume = "https://drive.google.com/file/d/1e1UBK8SVLFhlYvFFSeuVYWbTPBqMg6Qe/view?usp=sharing";
+export const resume = "https://drive.google.com/file/d/1GAvnVU0JyF-ElwW49WQga0PCPgb2Gk85/view?usp=sharing";
 
 export const socials = [
   {
@@ -24,10 +24,6 @@ export const socials = [
   {
     icon: "/socials/twitter.svg",
     link: "https://twitter.com/HubaFerencz",
-  },
-  {
-    icon: "/socials/telegram.svg",
-    link: "https://t.me/hubaferencz",
   },
 ];
 
