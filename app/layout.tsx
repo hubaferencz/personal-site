@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${quicksand.className} bg-white text-white dark:bg-black`}
+        className={`${quicksand.className} text-white bg-black`}
       >
         {children}
         <Toaster
